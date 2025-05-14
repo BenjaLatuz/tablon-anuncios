@@ -36,7 +36,7 @@ export default function Home({ anuncios }) {
           alignItems: 'center',
           gap: '0.5rem'
         }}>
-          
+
           Crear nuevo anuncio
         </a>
       </div>
@@ -51,7 +51,6 @@ export default function Home({ anuncios }) {
           margin: '2rem 0'
         }}>
           <p style={{ margin: 0 }}>No hay anuncios publicados aún.</p>
-          <p style={{ margin: '0.5rem 0 0 0', fontSize: '0.9rem' }}>¡Sé el primero en crear uno!</p>
         </div>
       ) : (
         <div style={{ 
