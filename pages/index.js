@@ -82,7 +82,7 @@ export default function Home({ anuncios }) {
                 }}>
                   {anuncio.titulo}
                 </h2>
-                <a 
+                <Link 
                   href={`/edit/${anuncio.id}`}
                   style={{
                     padding: '0.5rem 0.75rem',
@@ -99,7 +99,7 @@ export default function Home({ anuncios }) {
                 >
                   <span>✏️</span>
                   Editar
-                </a>
+                </Link>
               </div>
               <p style={{ 
                 margin: 0,
