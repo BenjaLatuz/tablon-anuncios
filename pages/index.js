@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client';
+import Link from 'next/link';
 
 const prisma = new PrismaClient();
 
@@ -24,21 +25,21 @@ export default function Home({ anuncios }) {
          Tablón de Anuncios
       </h1>
 
-      <div style={{ textAlign: 'center', margin: '2rem 0' }}>
-        <a href="/create" style={{
-          padding: '0.75rem 1.5rem',
-          backgroundColor: '#007bff',
-          color: 'white',
-          borderRadius: '4px',
-          textDecoration: 'none',
-          fontSize: '0.875rem',
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '0.5rem'
-        }}>
-
-          Crear nuevo anuncio
-        </a>
+      <div style={{ marginBottom: '2rem', textAlign: 'right' }}>
+        <Link
+          href="/create"
+          style={{
+            display: 'inline-block',
+            padding: '0.75rem 1.5rem',
+            backgroundColor: '#007bff',
+            color: '#fff',
+            textDecoration: 'none',
+            borderRadius: '4px',
+            fontSize: '0.875rem'
+          }}
+        >
+          ✨ Crear nuevo anuncio
+        </Link>
       </div>
 
       {anuncios.length === 0 ? (

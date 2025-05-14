@@ -1,4 +1,5 @@
 import { PrismaClient } from '@prisma/client';
+import Link from 'next/link';
 
 const prisma = new PrismaClient();
 
@@ -136,7 +137,7 @@ export default function Editar({ anuncio }) {
             gap: '0.75rem', 
             justifyContent: 'flex-end'
           }}>
-            <a 
+            <Link 
               href="/" 
               style={{
                 padding: '0.75rem 1rem',
@@ -149,7 +150,7 @@ export default function Editar({ anuncio }) {
               }}
             >
               Cancelar
-            </a>
+            </Link>
             <button 
               type="submit" 
               style={{
