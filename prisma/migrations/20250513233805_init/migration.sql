@@ -1,0 +1,7 @@
+-- CreateTable
+CREATE TABLE "Anuncio" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "titulo" TEXT NOT NULL,
+    "contenido" TEXT NOT NULL,
+    "creadoEn" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
